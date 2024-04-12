@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>My Projects</h1>
+        <h3>
+        <ul id="projects-list">
+            Watchextra.com -  website
+        </h3>
+            <li>I create front end website name Watchextra.com with the help of PHP with Wordpress in my collage internship</li>
+       
+        </ul>
+        <h3>
+        <ul id="projects-list">
+            Vperfumes - Application
+        </h3>
+            <li>I Create E-commerce Application using flutter framework and dart language in my collage project.</li>
+        </ul>
+        <h3>
+            <ul id="projects-list">
+            Flipcart clone - Website
+        </h3>
+            <li>I create clone of Flipcart with the help of HTML Javascript and CSS. </li>
+        </ul>
+    </div>
+<style>
+  /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;   
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 33);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    background-color:  rgb(18, 18, 65);
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    list-style: none;
+}
+@media screen and (max-width: 600px) {
+          h1{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+          }
+          ul{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;    
+          }
+          li{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; 
+          }
+
+        }
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
+</style>
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function () {
+    // Sample projects data
+    const projects = [
+        { name: 'Project 1', description: 'Description for Project 1' },
+        { name: 'Project 2', description: 'Description for Project 2' },
+        { name: 'Project 3', description: 'Description for Project 3' },
+    ];
+
+    const projectsList = document.getElementById('projects-list');
+
+    // Loop through projects and create list items
+    projects.forEach(project => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `<strong>${project.name}</strong>: ${project.description}`;
+        projectsList.appendChild(listItem);
+    });
+});
+
+    </script>
+</body>
+</html>

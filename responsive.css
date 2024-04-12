@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    .firstsection>div {
+      width: 62%;
+      font-size: large;
+    }
+  
+    #element {
+      font-size: large;
+    }
+  
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 48px 37px;
+    }
+  
+    nav ul {
+      display: inline-block;
+    }
+  
+    nav {
+      /* display: flex;
+      justify-content: space-around;
+      align-items: center; */
+      width: 100%;
+      height: 152px;
+      background-color: rgb(18, 18, 65);
+      
+    }
+  
+    .card-item img {
+      width: 140px;
+    }
+    .rightsection img {
+      width: 75%;
+      margin: 50px;
+      margin-right: 7px;
+  }
+  .footer-content {
+    flex-direction: row;
+}
+
+  }
